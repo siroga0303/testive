@@ -1,0 +1,35 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: #12849bd4;
+
+    img {
+        height: 80px;
+        border: white solid 2px;
+        border-radius: 15px;
+    }
+    .nav__container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .nav__item {
+            all: unset;
+            cursor: pointer;
+            display: block;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+            border-radius: 15px;
+            &.active {
+                background-color: white;
+                color: black;
+            }
+            &.logout {
+                background-color: #e78529ed;
+                color: white;
+            }
+        }
+    }
+}

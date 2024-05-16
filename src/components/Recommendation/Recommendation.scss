@@ -1,0 +1,22 @@
+.recommendation {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-rows: 70vh 5fr;
+    
+    min-height: 85vh;
+}
+
+.boardgames {
+    align-self: start;
+
+    & h1 {
+        text-align: center;
+        width: 100%;
+    }
+
+    width: 100%;
+    & li {
+        list-style: none;
+    }
+}

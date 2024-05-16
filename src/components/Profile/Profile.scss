@@ -1,0 +1,30 @@
+.user-profile__img {
+    border-radius: 50%;
+    max-width: 12rem;
+    max-height: 12rem;
+  }
+
+  .user-profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .user-profile__counter {
+    color: #59b3b3;
+    font-size: 2rem;
+    margin: 0;
+  }
+
+  .user-profile__counter-description {
+    font-style: italic;
+  }
+
+  .user-profile__liked {
+    display: flex;
+    gap: 2rem;
+  }
+
+  .user-profile__liked li{
+    list-style: none;
+  }

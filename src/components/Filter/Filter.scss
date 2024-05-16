@@ -1,0 +1,108 @@
+.filter {
+    all: unset;
+    box-shadow: 0px 0px 8px #59b3b3;
+    border-radius: 15px;
+    
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 1rem;
+    align-self: start;
+    justify-self: center;
+
+    margin-top: 0.5rem;
+   
+}
+.colapse {
+  all: unset;
+  
+ 
+  border-radius: 15px;
+  
+  align-self: start;
+  justify-self: center;
+
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  width: 60vw;
+
+}
+summary {
+  background-color: #db8732;
+    list-style: none;
+    color: white;
+    border-radius: 15px;  
+    padding: 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* sigh, Safari again */
+
+summary::-webkit-details-marker {
+    display: none;
+    text-align: center;
+}
+
+.filter__range {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.filter__range-description {
+    display: block;
+    flex: 1 1 auto;
+    font-family: 'Space Grotesk', sans-serif;
+    line-height: 1.2;
+    font-weight: 500;
+    margin: 0;
+}
+.filter__range-enable {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    flex: 1 1 auto;
+    margin: 0;
+}
+
+.chip-select {
+    display: flex;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    & p {
+        width: 30%;
+        text-align: center;
+    }
+}
+
+.select {
+    display: flex;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    & p {
+        width: 30%;
+        text-align: center;
+    }
+    & > div {
+        margin: 8px;
+        width: 300px;
+    }
+}
+
+.selects {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+}
+
+.filter-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
