@@ -3,6 +3,7 @@ import {
     RouterProvider,
     defer,
     redirect,
+    createHashRouter
 } from 'react-router-dom';
 import Auth from './components/Auth/Auth.jsx';
 import ErrorPage from './util/error-page.jsx';
@@ -172,7 +173,7 @@ const App = () => {
 
     console.log(isAuth);
 
-    const router = createBrowserRouter([
+    const router = createHashRouter([
         {
             path: '/',
             element: <Recommendation isAuth={isAuth} onLogOut={logoutHandler} token = {token}/>,
